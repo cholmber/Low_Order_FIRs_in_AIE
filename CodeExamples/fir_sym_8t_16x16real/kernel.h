@@ -1,5 +1,4 @@
-#ifndef INCLUDE_H
-#define INCLUDE_H
+#pragma once
 
 // Kernel-specific based on intrinsics
 #define AIE_RD_BUFFER_V             16
@@ -16,6 +15,4 @@
 #define INPUT_FILE                  "./SimInputs.txt"
 
 // Kernel prototype
-void fir_sym_8t_16x16real(input_window_int16 *a, output_window_int16 *c);
-
-#endif // INCLUDE_H
+void fir_sym_8t_16x16real(input_window_int16 *in, output_window_int16 *out);
